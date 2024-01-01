@@ -1,7 +1,7 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-ARG RTL_433_VERSION=23.11
+ARG RTL_433_VERSION=master
 
 RUN apk update && apk upgrade
 RUN apk add --no-cache python3 py3-pip git
