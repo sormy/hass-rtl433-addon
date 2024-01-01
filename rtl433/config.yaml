@@ -1,7 +1,7 @@
 name: RTL433
 description: Bridge between sensors discovered by rtl_433 SDR and Home Assistant
 url: https://github.com/sormy/hass-rtl433-addon
-version: 1.22.11
+version: 1.23.11
 slug: rtl433
 arch: [armhf, armv7, aarch64, amd64, i386]
 init: false
