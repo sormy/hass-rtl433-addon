@@ -1,0 +1,11 @@
+configuration:
+  rtl433_opts:
+    name: rtl_433 options
+    description:
+      "rtl_433 command line options, see more here:
+      https://github.com/merbanan/rtl_433"
+  rtl433_mqtt_hass_opts:
+    name: rtl_433_mqtt_hass options
+    description:
+      "rtl433_mqtt_hass_opts command line options, see more here:
+      https://github.com/merbanan/rtl_433/blob/master/examples/rtl_433_mqtt_hass.py"

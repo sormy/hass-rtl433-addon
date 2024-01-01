@@ -1,0 +1,19 @@
+name: RTL433
+description: Bridge between sensors discovered by rtl_433 SDR and Home Assistant
+url: https://github.com/sormy/hass-rtl433-addon
+version: 1.22.11
+slug: rtl433
+arch: [armhf, armv7, aarch64, amd64, i386]
+init: false
+usb: true
+udev: true
+services:
+  - mqtt:need
+options:
+  rtl433_opts:
+    "-F mqtt://core-mosquitto:1883,user=rtl433,pass=secret_change_me,retain=0"
+  rtl433_mqtt_hass_opts:
+    "--host core-mosquitto --port 1883 --user rtl433 --password secret_change_me"
+schema:
+  rtl433_opts: str
+  rtl433_mqtt_hass_opts: str
